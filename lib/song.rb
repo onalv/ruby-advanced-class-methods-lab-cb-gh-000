@@ -50,6 +50,7 @@ class Song
     data = name_file.split(".")[0]
     artist = data.split(" - ")[0]
     song_name = data.split(" - ")[1]
-    self.create_by_name(song_name)
+    song = self.create_by_name(song_name)
+    song.artist_name = artist
   end
 end
