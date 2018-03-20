@@ -54,4 +54,12 @@ class Song
     song.artist_name = artist
     song
   end
+
+  def self.create_from_filename(nane_file)
+
+  end
+
+  def self.destroy_all
+    self.all.clear
+  end
 end
