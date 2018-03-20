@@ -10,7 +10,7 @@ class Song
     self.class.all << self
   end
 
-  def self.create
+  def create
     new_song = self.new
     @@all << new_song
     new_song
