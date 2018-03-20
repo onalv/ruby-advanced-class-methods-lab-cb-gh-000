@@ -51,7 +51,7 @@ describe "Song Class Methods" do
 
       expect(song_1).to eq(song_2)
     end
-    
+
     it 'creates a new Song object with the provided title if one doesn\'t already exist' do
       blank_space = Song.find_by_name("Blank Space")
       expect(blank_space).to be(nil)
@@ -66,7 +66,7 @@ describe "Song Class Methods" do
       song_1 = Song.create_by_name("Thriller")
       song_2 = Song.create_by_name("Blank Space")
       song_3 = Song.create_by_name("Call Me Maybe")
-
+      binding.pry
       expect(Song.alphabetical).to eq([song_2, song_3, song_1])
     end
   end
