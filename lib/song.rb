@@ -55,7 +55,7 @@ class Song
     song
   end
 
-  def self.create_from_filename(nane_file)
+  def self.create_from_filename(name_file)
     data = name_file.split(".")[0]
     artist = data.split(" - ")[0]
     song_name = data.split(" - ")[1]
