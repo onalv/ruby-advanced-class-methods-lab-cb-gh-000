@@ -51,6 +51,6 @@ class Song
     artist = data.split(" - ")[0]
     song_name = data.split(" - ")[1]
     self.create_by_name(song_name)
-    song_name
+    artist
   end
 end
