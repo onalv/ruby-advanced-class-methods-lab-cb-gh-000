@@ -52,5 +52,6 @@ class Song
     song_name = data.split(" - ")[1]
     song = self.create_by_name(song_name)
     song.artist_name = artist
+    song
   end
 end
